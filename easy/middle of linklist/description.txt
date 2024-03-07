@@ -1,0 +1,17 @@
+Understanding the Problem:
+
+We're given a singly linked list, which means each node has a reference to the next node in the list.
+We need to find the middle node of the linked list.
+If there are two middle nodes, we return the second middle node.
+The number of nodes in the list is between 1 and 100, and each node has a value between 1 and 100.
+Approach:
+
+One common approach to finding the middle of a linked list is to use two pointers - a slow pointer and a fast pointer.
+The slow pointer moves one node at a time while the fast pointer moves two nodes at a time.
+When the fast pointer reaches the end of the list, the slow pointer will be at the middle of the list.
+Implementation:
+
+Initialize two pointers, slow and fast, both pointing to the head of the list.
+Traverse the list with fast moving two steps at a time and slow moving one step at a time until fast reaches the end of the list.
+When fast reaches the end, slow will be at the middle of the list.
+Return the node where slow is pointing.

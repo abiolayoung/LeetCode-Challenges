@@ -1,0 +1,10 @@
+Understanding the Problem:
+
+We are given an array of integers nums and an integer target.
+We need to find two numbers in the array that add up to the target.
+We must return the indices of these two numbers.
+Approach:
+
+One common approach is to use a hashmap (JavaScript object) to store the difference between the target and each element of the array.
+While iterating through the array, we check if the current element's complement (the difference) exists in the hashmap.
+If it does, it means we have found the pair that adds up to the target.
